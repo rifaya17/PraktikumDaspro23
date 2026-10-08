@@ -19,16 +19,16 @@ public class StudiKasus1_23 {
         }
             totalBayar = totalHarga - diskon;
         
-        System.out.print("Total harga: " + totalHarga);
-        System.out.print("Diskon: " + diskon);
-        System.out.print("Total bayar: " + totalBayar);
+        System.out.println("Total harga: " + totalHarga);
+        System.out.println("Diskon: " + diskon);
+        System.out.println("Total bayar: " + totalBayar);
 
         if (uangBayar >= totalBayar) {
             kembalian = uangBayar - totalBayar;
-            System.out.print("Kembalian: " + kembalian);
+            System.out.println("Kembalian: " + kembalian);
         } else {
             kurang = totalBayar - uangBayar;
-            System.out.print("Uang tidak cukup, kurang Rp. " + kurang);
+            System.out.println("Uang tidak cukup, kurang Rp. " + kurang);
         }
 
         sc.close();
